@@ -13,7 +13,7 @@ df_cleaned <- df_expression_unstranded_data_tpm %>% group_by(Gene_ID) %>%
   summarise(across(where(is.numeric), mean, na.rm = TRUE)) %>% ungroup()
 
 #Translating the ENSMBL ID to Gene Symbols
-gtf_file <- "/CCBdata/data/datasets/general_info/gencode.v47.basic.annotation.gtf"
+gtf_file <- "/path_to_file"
 genes_gtf <- rtracklayer::import(gtf_file)
 genes <- genes_gtf[genes_gtf$type == "gene"]
 
