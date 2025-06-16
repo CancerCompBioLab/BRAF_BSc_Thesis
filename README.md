@@ -38,7 +38,16 @@ Performing Differential Expression Analysis and Gene Set Enrichment Anaylsis usi
 
 ### 9_VIPERxLIMMA_analysis.R
 
-Loading regulons from ARACNe's output and performing VIPER analysis (limma was used to get the differentially expressed genes signatures)
+Loading regulons from ARACNe's output and performing VIPER analysis (limma was used to get the differentially expressed genes signatures).
+
+## Datasets
+
+In this folder you can find the metadata for TCGA and E-MTAB-12862 cohorts (fully annotated). Raw counts and additional datasets are not included due its large size.
+
+## Results
+
+This folder contains the results of the multiple Differential Expression Analysis performed (TCGA, E-MTAB-12862, 1vsRest TCGA), as well as the VIPER analysis results (non-Shadowed results included).
+
 
 
 
