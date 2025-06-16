@@ -1,9 +1,9 @@
 #E-MTAB-12862 loading and exploratory analysis
 
 #loading data, please change paths to your local directories
-MTAB_counts <- read.table(gzfile("/CCBdata/users/lea/BRAF_Postdoc_Project/Datasets/RNA-seq/E-MTAB-12862/CRC.SW.mRNA.count.txt.gz"), sep="\t", header=TRUE, stringsAsFactors=FALSE)
-metadata_MTAB<- read_xlsx("/CCBdata/users/lea/BRAF_Postdoc_Project/Datasets/RNA-seq/E-MTAB-12862/metadata_2.xlsx")
-MTAB_counts_symbol <- read.table(gzfile("/CCBdata/users/lea/BRAF_Postdoc_Project/Datasets/RNA-seq/E-MTAB-12862/CRC.SW.mRNA.symbol.count.txt.gz"), sep="\t", header=TRUE, stringsAsFactors=FALSE)
+MTAB_counts <- read.table(gzfile("/path_to_file"), sep="\t", header=TRUE, stringsAsFactors=FALSE)
+metadata_MTAB<- read_xlsx("/path_to_file")
+MTAB_counts_symbol <- read.table(gzfile("/path_to_file"), sep="\t", header=TRUE, stringsAsFactors=FALSE)
 
 MTAB_counts_filtered <- MTAB_counts
 colnames(MTAB_counts_filtered) <- gsub("\\.", "-", colnames(MTAB_counts_filtered))
