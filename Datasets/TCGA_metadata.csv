@@ -1,0 +1,406 @@
+condition,gender,MsiStatus,TumorPurity,age_at_initial_pathologic_diagnosis,STAGEn,anatomic_neoplasm_subdivision,Site
+wt,FEMALE,MSS,0.63,60,3,Cecum,right
+wt,MALE,MSS,0.71,50,4,Ascending Colon,right
+wt,MALE,MSS,0.62,76,3,Sigmoid Colon,left
+wt,MALE,MSS,0.5,79,1,Hepatic Flexure,right
+wt,MALE,MSS,0.69,73,3,Hepatic Flexure,right
+wt,FEMALE,MSS,0.73,54,2,Hepatic Flexure,right
+wt,FEMALE,MSI-H,NA,51,1,Descending Colon,left
+wt,MALE,MSS,0.75,45,4,Sigmoid Colon,left
+wt,FEMALE,MSS,0.61,77,2,Sigmoid Colon,left
+wt,MALE,MSI-H,0.73,65,0,Sigmoid Colon,left
+wt,FEMALE,MSS,0.69,42,2,Transverse Colon,right
+wt,FEMALE,MSI-H,0.53,71,1,Cecum,right
+wt,FEMALE,MSS,0.76,90,3,Cecum,right
+wt,FEMALE,MSS,0.73,80,3,Sigmoid Colon,left
+wt,FEMALE,MSI-H,0.35,66,2,Transverse Colon,right
+wt,FEMALE,MSS,0.62,78,1,Cecum,right
+wt,MALE,MSS,0.78,68,2,Sigmoid Colon,left
+wt,FEMALE,MSS,0.86,82,4,Cecum,right
+wt,MALE,MSI-H,0.6,70,2,Transverse Colon,right
+wt,MALE,MSS,0.89,72,2,Ascending Colon,right
+wt,FEMALE,MSS,0.53,41,3,Hepatic Flexure,right
+wt,MALE,MSS,NA,84,2,Hepatic Flexure,right
+wt,MALE,MSS,0.6,65,3,Sigmoid Colon,left
+wt,FEMALE,MSS,0.58,75,1,Cecum,right
+wt,FEMALE,MSS,0.63,59,4,Sigmoid Colon,left
+wt,FEMALE,MSS,0.74,83,3,Sigmoid Colon,left
+wt,MALE,MSS,0.62,65,3,Descending Colon,left
+wt,MALE,MSS,0.76,73,2,Cecum,right
+wt,MALE,MSS,0.66,55,3,Hepatic Flexure,right
+wt,FEMALE,MSS,0.66,40,3,Sigmoid Colon,left
+wt,FEMALE,MSS,0.87,77,4,Sigmoid Colon,left
+wt,FEMALE,MSI-H,0.61,58,2,Cecum,right
+wt,MALE,MSS,0.84,80,4,Sigmoid Colon,left
+wt,FEMALE,MSS,0.64,51,3,Sigmoid Colon,left
+wt,FEMALE,MSS,0.8,71,3,Cecum,right
+wt,FEMALE,MSS,0.7,70,3,Sigmoid Colon,left
+wt,FEMALE,MSS,0.83,78,3,Sigmoid Colon,left
+wt,FEMALE,MSS,0.61,47,3,Sigmoid Colon,left
+wt,MALE,MSS,0.58,73,2,Cecum,right
+wt,MALE,MSS,0.46,58,0,Ascending Colon,right
+wt,FEMALE,MSS,0.66,36,1,Sigmoid Colon,left
+wt,FEMALE,MSS,0.81,89,1,Sigmoid Colon,left
+wt,FEMALE,MSS,0.56,82,3,Sigmoid Colon,left
+wt,FEMALE,MSS,0.84,43,3,Transverse Colon,right
+wt,MALE,MSS,0.74,76,4,Cecum,right
+wt,FEMALE,MSS,0.8,61,2,Sigmoid Colon,left
+wt,FEMALE,MSS,0.62,54,1,Sigmoid Colon,left
+wt,MALE,MSS,0.68,71,2,Ascending Colon,right
+wt,MALE,MSS,0.65,90,2,Ascending Colon,right
+wt,MALE,MSS,0.81,75,4,Cecum,right
+wt,MALE,MSS,0.77,67,1,Sigmoid Colon,left
+wt,MALE,MSS,0.75,73,3,Sigmoid Colon,left
+wt,MALE,MSS,0.68,56,2,Sigmoid Colon,left
+wt,MALE,MSS,0.56,61,1,Cecum,right
+wt,FEMALE,MSS,0.78,37,3,Sigmoid Colon,left
+wt,FEMALE,MSS,0.57,66,3,Cecum,right
+wt,FEMALE,MSS,0.64,59,4,Sigmoid Colon,left
+wt,FEMALE,MSS,0.84,72,3,Sigmoid Colon,left
+wt,MALE,MSS,0.53,49,2,Splenic Flexure,left
+wt,MALE,MSS,0.57,82,1,Sigmoid Colon,left
+wt,MALE,MSS,0.66,85,4,Sigmoid Colon,left
+wt,FEMALE,MSS,0.59,82,2,Sigmoid Colon,left
+wt,FEMALE,MSI-H,0.64,53,3,Sigmoid Colon,left
+wt,MALE,MSS,0.7,65,2,Cecum,right
+wt,FEMALE,MSS,0.61,73,2,Cecum,right
+wt,MALE,MSS,0.8,66,2,Sigmoid Colon,left
+wt,MALE,MSS,0.58,58,2,Ascending Colon,right
+wt,FEMALE,MSI-H,0.28,52,2,Cecum,right
+wt,FEMALE,MSS,0.41,70,2,Ascending Colon,right
+wt,FEMALE,MSS,0.6,83,2,Ascending Colon,right
+wt,MALE,MSS,0.66,57,3,Sigmoid Colon,left
+wt,MALE,MSS,0.77,67,3,Ascending Colon,right
+wt,MALE,MSS,0.66,66,4,Ascending Colon,right
+wt,MALE,MSS,0.78,63,3,Sigmoid Colon,left
+wt,MALE,MSS,0.43,77,3,Ascending Colon,right
+wt,MALE,MSS,0.82,80,2,Cecum,right
+wt,FEMALE,MSS,0.52,51,3,Hepatic Flexure,right
+wt,FEMALE,MSS,0.74,55,3,Cecum,right
+wt,FEMALE,MSS,0.76,45,4,Sigmoid Colon,left
+wt,MALE,MSS,0.79,46,4,Splenic Flexure,left
+wt,MALE,MSS,0.58,74,1,Sigmoid Colon,left
+wt,MALE,MSS,0.81,59,4,Sigmoid Colon,left
+wt,FEMALE,MSS,0.84,79,3,Hepatic Flexure,right
+wt,MALE,MSS,0.62,44,2,Ascending Colon,right
+wt,FEMALE,MSS,0.54,74,3,Sigmoid Colon,left
+wt,NA,MSS,0.52,NA,NA,NA,NA
+wt,MALE,MSS,0.7,63,2,Sigmoid Colon,left
+wt,FEMALE,MSS,0.87,75,4,Sigmoid Colon,left
+wt,MALE,MSS,0.51,90,3,Cecum,right
+wt,FEMALE,MSS,0.56,77,3,Cecum,right
+wt,MALE,MSS,0.67,61,2,Sigmoid Colon,left
+wt,MALE,MSS,0.81,80,4,Ascending Colon,right
+wt,MALE,MSI-H,0.68,47,3,Ascending Colon,right
+wt,MALE,MSS,0.72,70,2,Sigmoid Colon,left
+wt,MALE,MSS,0.75,82,1,Cecum,right
+wt,FEMALE,MSS,0.68,57,3,Ascending Colon,right
+wt,FEMALE,MSI-H,0.72,86,2,Ascending Colon,right
+wt,MALE,MSS,0.79,65,3,Descending Colon,left
+wt,FEMALE,MSS,0.81,47,4,Splenic Flexure,left
+wt,MALE,MSS,0.36,37,4,Cecum,right
+wt,MALE,MSS,0.58,61,2,Cecum,right
+wt,FEMALE,MSS,0.84,78,2,Ascending Colon,right
+wt,FEMALE,MSS,0.68,70,2,Cecum,right
+wt,MALE,MSS,0.78,51,1,Ascending Colon,right
+wt,FEMALE,MSS,0.51,82,4,Cecum,right
+wt,FEMALE,MSS,0.45,77,2,Sigmoid Colon,left
+wt,FEMALE,MSS,0.46,52,4,Sigmoid Colon,left
+wt,MALE,MSS,0.82,72,1,Cecum,right
+wt,MALE,MSS,0.8,75,2,Hepatic Flexure,right
+wt,MALE,MSS,0.62,82,2,Transverse Colon,right
+wt,FEMALE,MSS,0.88,75,2,Sigmoid Colon,left
+wt,MALE,MSS,0.69,58,3,Ascending Colon,right
+wt,MALE,MSS,0.7,73,1,Transverse Colon,right
+wt,FEMALE,MSS,0.82,74,4,Sigmoid Colon,left
+wt,FEMALE,MSS,0.61,45,3,Sigmoid Colon,left
+wt,MALE,MSI-H,0.46,58,0,Cecum,right
+wt,FEMALE,MSS,0.8,53,2,Transverse Colon,right
+wt,MALE,MSS,0.82,58,4,Sigmoid Colon,left
+wt,MALE,MSS,0.58,60,3,Sigmoid Colon,left
+wt,MALE,MSS,0.69,44,4,Sigmoid Colon,left
+wt,FEMALE,MSS,0.58,56,4,Sigmoid Colon,left
+wt,MALE,MSI-H,0.82,71,2,Cecum,right
+wt,FEMALE,MSS,0.67,71,4,Ascending Colon,right
+wt,FEMALE,MSI-H,0.71,90,2,Transverse Colon,right
+wt,MALE,MSS,0.81,81,1,Cecum,right
+wt,FEMALE,MSS,0.84,36,1,Sigmoid Colon,left
+wt,FEMALE,MSS,0.41,57,3,Cecum,right
+wt,MALE,MSS,0.77,74,4,Sigmoid Colon,left
+wt,MALE,MSI-H,0.4,69,2,Hepatic Flexure,right
+wt,MALE,MSS,0.72,63,2,Descending Colon,left
+wt,MALE,MSS,0.85,60,2,Splenic Flexure,left
+wt,FEMALE,MSS,0.83,55,1,Sigmoid Colon,left
+wt,FEMALE,MSI-H,0.71,40,3,Sigmoid Colon,left
+wt,MALE,MSS,0.41,80,3,Cecum,right
+wt,FEMALE,MSS,0.83,67,4,Cecum,right
+wt,MALE,MSS,0.69,74,2,Sigmoid Colon,left
+wt,FEMALE,MSS,0.77,68,3,Transverse Colon,right
+wt,FEMALE,MSS,0.83,78,2,Hepatic Flexure,right
+wt,FEMALE,MSS,0.6,72,2,Hepatic Flexure,right
+wt,MALE,MSS,0.65,75,2,Ascending Colon,right
+wt,FEMALE,MSS,0.92,57,4,Ascending Colon,right
+wt,MALE,MSI-H,0.78,73,3,Hepatic Flexure,right
+wt,MALE,MSS,0.84,69,1,Cecum,right
+wt,MALE,MSS,0.77,69,2,Sigmoid Colon,left
+wt,FEMALE,MSS,0.68,60,2,Hepatic Flexure,right
+wt,MALE,MSS,0.54,51,2,Transverse Colon,right
+wt,FEMALE,MSS,0.35,45,0,Transverse Colon,right
+wt,MALE,MSS,0.82,68,1,Sigmoid Colon,left
+wt,FEMALE,MSS,0.42,48,2,Sigmoid Colon,left
+wt,FEMALE,MSS,0.69,78,3,Cecum,right
+wt,FEMALE,MSS,0.8,63,3,Sigmoid Colon,left
+wt,MALE,MSS,0.89,69,4,Sigmoid Colon,left
+wt,FEMALE,MSI-H,0.77,61,2,Sigmoid Colon,left
+wt,MALE,MSS,0.59,65,0,Ascending Colon,right
+wt,MALE,MSS,0.57,84,3,Cecum,right
+wt,MALE,MSS,0.78,88,2,Splenic Flexure,left
+wt,FEMALE,MSS,0.88,68,4,Sigmoid Colon,left
+wt,MALE,MSS,0.72,74,1,Sigmoid Colon,left
+wt,MALE,MSS,0.58,73,2,Sigmoid Colon,left
+wt,FEMALE,MSS,0.46,58,2,Descending Colon,left
+wt,MALE,MSI-H,0.59,75,2,Cecum,right
+wt,MALE,MSI-H,0.63,60,2,Cecum,right
+wt,MALE,MSS,0.72,61,4,Sigmoid Colon,left
+wt,MALE,MSS,0.8,35,4,Cecum,right
+wt,FEMALE,MSS,0.68,51,2,Sigmoid Colon,left
+wt,MALE,MSS,0.74,75,2,Hepatic Flexure,right
+wt,FEMALE,MSS,0.77,74,2,Sigmoid Colon,left
+wt,MALE,MSS,0.69,64,3,Transverse Colon,right
+wt,MALE,MSS,0.8,60,1,Cecum,right
+wt,MALE,MSS,0.74,51,3,Cecum,right
+wt,FEMALE,MSS,0.62,49,4,Sigmoid Colon,left
+wt,MALE,MSS,0.74,72,2,Cecum,right
+wt,FEMALE,MSS,0.77,69,2,Cecum,right
+wt,MALE,MSS,0.6,82,2,Transverse Colon,right
+wt,FEMALE,MSS,0.71,78,1,Ascending Colon,right
+wt,FEMALE,MSS,0.78,53,2,Sigmoid Colon,left
+wt,MALE,MSS,0.78,38,3,Descending Colon,left
+wt,MALE,MSS,0.41,45,2,Ascending Colon,right
+wt,FEMALE,MSS,0.78,53,2,Sigmoid Colon,left
+wt,MALE,MSS,0.82,82,2,Transverse Colon,right
+wt,MALE,MSS,0.76,88,2,Transverse Colon,right
+wt,FEMALE,MSS,0.78,73,1,Sigmoid Colon,left
+wt,MALE,MSS,0.9,82,3,Ascending Colon,right
+wt,NA,MSS,0.67,NA,NA,NA,right
+wt,MALE,MSS,0.43,71,4,Sigmoid Colon,left
+wt,FEMALE,MSS,0.79,68,2,Splenic Flexure,left
+wt,MALE,MSS,0.71,55,4,Sigmoid Colon,left
+wt,MALE,MSS,0.65,47,4,Cecum,right
+wt,MALE,MSS,0.5,77,3,Transverse Colon,right
+wt,FEMALE,MSS,0.83,79,2,Ascending Colon,right
+wt,FEMALE,MSS,0.64,55,4,Cecum,right
+wt,FEMALE,MSS,0.87,47,3,Sigmoid Colon,left
+wt,MALE,MSS,0.56,58,2,Sigmoid Colon,left
+wt,MALE,MSS,0.63,56,4,Sigmoid Colon,left
+wt,FEMALE,MSS,0.81,70,4,Sigmoid Colon,left
+wt,FEMALE,MSS,0.57,46,3,Sigmoid Colon,left
+wt,FEMALE,MSS,0.71,50,0,Ascending Colon,right
+wt,MALE,MSS,0.61,79,2,Ascending Colon,right
+wt,MALE,MSS,0.89,67,2,Cecum,right
+wt,FEMALE,MSS,0.54,71,4,Ascending Colon,right
+wt,FEMALE,MSS,0.81,44,2,Cecum,right
+wt,MALE,MSS,0.78,51,3,Sigmoid Colon,left
+wt,MALE,MSS,0.76,75,3,Ascending Colon,right
+wt,FEMALE,MSS,0.74,54,2,Sigmoid Colon,left
+wt,MALE,MSS,0.82,83,2,Ascending Colon,right
+wt,MALE,MSS,0.71,82,2,Sigmoid Colon,left
+wt,FEMALE,MSS,0.81,72,2,Sigmoid Colon,left
+wt,MALE,MSS,0.76,76,1,Sigmoid Colon,left
+wt,FEMALE,MSS,0.68,42,2,Descending Colon,left
+wt,MALE,MSS,0.85,85,2,Sigmoid Colon,left
+wt,MALE,MSS,0.72,75,3,Sigmoid Colon,left
+wt,FEMALE,MSS,0.66,77,0,Sigmoid Colon,left
+wt,FEMALE,MSS,0.53,46,2,Sigmoid Colon,left
+wt,MALE,MSS,0.75,81,3,Sigmoid Colon,left
+wt,FEMALE,MSS,0.61,50,3,Cecum,right
+wt,MALE,MSS,0.53,69,4,Sigmoid Colon,left
+wt,FEMALE,MSS,0.84,71,1,Sigmoid Colon,left
+wt,FEMALE,MSS,0.64,52,2,Ascending Colon,right
+wt,MALE,MSS,0.52,43,2,Sigmoid Colon,left
+wt,FEMALE,MSS,0.51,55,3,Descending Colon,left
+wt,FEMALE,MSS,0.88,84,4,Ascending Colon,right
+wt,MALE,MSS,0.84,57,1,Sigmoid Colon,left
+wt,FEMALE,MSS,0.64,61,3,Sigmoid Colon,left
+wt,MALE,MSS,0.63,64,2,Sigmoid Colon,left
+wt,FEMALE,MSS,0.44,65,3,Descending Colon,left
+wt,MALE,MSS,0.78,69,3,Transverse Colon,right
+wt,MALE,MSS,0.85,73,1,Transverse Colon,right
+wt,MALE,MSS,0.77,65,2,Ascending Colon,right
+wt,MALE,MSS,0.48,80,3,Ascending Colon,right
+wt,MALE,MSS,0.7,63,3,Sigmoid Colon,left
+wt,FEMALE,MSI-H,NA,86,2,Ascending Colon,right
+wt,MALE,MSI-H,0.48,39,2,Hepatic Flexure,right
+wt,MALE,MSI-H,0.53,45,1,Cecum,right
+wt,FEMALE,MSS,0.43,84,2,Ascending Colon,right
+wt,FEMALE,MSS,0.62,88,1,Ascending Colon,right
+wt,MALE,MSS,0.55,53,3,Transverse Colon,right
+wt,FEMALE,MSI-H,0.37,40,4,Transverse Colon,right
+wt,FEMALE,MSS,0.89,51,3,Sigmoid Colon,left
+wt,FEMALE,MSS,0.89,51,3,Sigmoid Colon,left
+wt,MALE,MSS,0.79,59,4,Descending Colon,left
+wt,MALE,MSS,0.75,84,4,Transverse Colon,right
+wt,FEMALE,MSS,0.71,74,1,Transverse Colon,right
+wt,MALE,MSS,0.71,83,2,Ascending Colon,right
+wt,MALE,MSS,0.83,73,1,Cecum,right
+wt,MALE,MSS,0.85,68,3,Cecum,right
+wt,MALE,MSS,0.75,62,2,Sigmoid Colon,left
+wt,MALE,MSI-H,0.7,61,1,Sigmoid Colon,left
+wt,MALE,MSS,0.64,71,3,Sigmoid Colon,left
+wt,MALE,MSS,0.83,80,1,Sigmoid Colon,left
+wt,MALE,MSS,0.68,77,2,Descending Colon,left
+wt,FEMALE,MSS,0.76,60,3,Sigmoid Colon,left
+wt,MALE,MSI-H,0.48,43,3,Transverse Colon,right
+wt,FEMALE,MSS,0.6,80,3,Ascending Colon,right
+wt,MALE,MSI-H,NA,87,2,Sigmoid Colon,left
+wt,MALE,MSS,0.67,50,3,Cecum,right
+wt,MALE,MSS,0.74,76,2,Ascending Colon,right
+wt,FEMALE,MSS,0.71,57,2,Sigmoid Colon,left
+wt,MALE,MSI-H,0.43,34,2,Transverse Colon,right
+wt,FEMALE,MSS,0.73,51,1,Cecum,right
+wt,FEMALE,MSS,0.6,59,1,Sigmoid Colon,left
+wt,MALE,MSS,0.68,68,3,Descending Colon,left
+wt,FEMALE,MSS,0.63,73,1,Descending Colon,left
+wt,MALE,MSS,0.58,76,2,Sigmoid Colon,left
+wt,FEMALE,MSS,0.71,78,3,Sigmoid Colon,left
+wt,MALE,MSS,0.53,60,1,Transverse Colon,right
+wt,MALE,MSS,0.53,69,3,Cecum,right
+wt,FEMALE,MSS,0.51,68,3,Cecum,right
+wt,MALE,MSS,0.73,81,4,Cecum,right
+wt,MALE,MSS,0.43,75,2,Sigmoid Colon,left
+wt,MALE,MSS,0.77,68,2,Sigmoid Colon,left
+wt,FEMALE,MSS,0.62,65,1,Sigmoid Colon,left
+wt,FEMALE,MSS,0.67,55,2,Transverse Colon,right
+wt,FEMALE,MSS,0.72,48,1,Ascending Colon,right
+wt,MALE,MSS,0.6,64,4,Hepatic Flexure,right
+wt,MALE,MSS,0.9,84,2,Sigmoid Colon,left
+wt,FEMALE,MSS,0.57,39,3,Sigmoid Colon,left
+wt,FEMALE,MSS,0.64,75,2,Hepatic Flexure,right
+wt,MALE,MSS,0.72,72,1,Sigmoid Colon,left
+wt,MALE,MSS,0.8,42,4,Cecum,right
+wt,MALE,MSS,0.86,63,1,Sigmoid Colon,left
+wt,MALE,MSS,0.75,78,3,Cecum,right
+wt,MALE,MSS,0.57,78,0,Cecum,right
+wt,MALE,MSI-H,0.66,42,2,Cecum,right
+wt,MALE,MSS,0.6,72,3,Cecum,right
+wt,FEMALE,MSS,0.83,64,3,Sigmoid Colon,left
+wt,MALE,MSS,0.8,62,3,Cecum,right
+wt,MALE,MSS,0.83,68,2,Ascending Colon,right
+wt,FEMALE,MSS,0.6,84,1,Cecum,right
+wt,FEMALE,MSS,0.64,79,1,Cecum,right
+wt,FEMALE,MSS,0.7,67,2,Cecum,right
+wt,FEMALE,MSS,0.83,81,1,Ascending Colon,right
+wt,FEMALE,MSS,0.84,54,1,Cecum,right
+wt,MALE,MSS,0.77,81,2,Descending Colon,left
+wt,FEMALE,MSI-H,NA,54,1,Descending Colon,left
+wt,MALE,MSS,0.5,66,4,Descending Colon,left
+wt,FEMALE,MSS,0.62,71,3,Transverse Colon,right
+wt,FEMALE,MSS,0.54,81,1,Splenic Flexure,left
+wt,MALE,MSS,0.75,66,2,Sigmoid Colon,left
+wt,MALE,MSS,0.63,68,2,Sigmoid Colon,left
+wt,MALE,MSS,0.6,69,1,Cecum,right
+wt,FEMALE,MSI-H,0.61,63,4,Sigmoid Colon,left
+wt,MALE,MSS,0.76,67,2,Ascending Colon,right
+wt,FEMALE,MSS,0.29,34,3,Transverse Colon,right
+wt,MALE,MSI-H,NA,62,3,Cecum,right
+wt,FEMALE,MSS,0.85,82,3,Sigmoid Colon,left
+wt,MALE,MSS,0.74,58,3,Sigmoid Colon,left
+wt,MALE,MSS,0.7,73,3,Cecum,right
+wt,FEMALE,MSS,0.62,65,4,Ascending Colon,right
+wt,MALE,MSS,0.78,80,1,Cecum,right
+wt,FEMALE,MSS,0.62,70,2,Sigmoid Colon,left
+wt,MALE,MSS,0.75,68,3,Cecum,right
+wt,FEMALE,MSS,0.75,54,4,Sigmoid Colon,left
+wt,FEMALE,MSS,0.69,51,1,Sigmoid Colon,left
+wt,MALE,MSS,0.52,50,1,Cecum,right
+wt,MALE,MSS,0.66,69,2,Transverse Colon,right
+wt,MALE,MSS,0.79,74,2,Ascending Colon,right
+wt,FEMALE,MSS,0.57,49,3,Transverse Colon,right
+wt,FEMALE,MSS,0.45,68,2,Cecum,right
+wt,MALE,MSS,0.66,60,3,Ascending Colon,right
+wt,FEMALE,MSS,0.74,41,2,Sigmoid Colon,left
+wt,MALE,MSS,0.52,79,4,Ascending Colon,right
+wt,MALE,MSS,0.57,74,1,Transverse Colon,right
+wt,MALE,MSI-H,NA,77,1,Hepatic Flexure,right
+wt,MALE,MSS,0.7,74,4,Ascending Colon,right
+wt,FEMALE,MSS,0.44,55,3,Transverse Colon,right
+wt,MALE,MSS,0.8,59,2,Sigmoid Colon,left
+wt,MALE,MSS,0.84,70,3,Sigmoid Colon,left
+wt,FEMALE,MSS,0.51,73,2,Ascending Colon,right
+wt,MALE,MSS,0.71,67,2,Hepatic Flexure,right
+wt,FEMALE,MSS,0.75,79,2,Sigmoid Colon,left
+wt,MALE,MSI-H,NA,84,2,Ascending Colon,right
+wt,MALE,MSS,0.79,78,2,Sigmoid Colon,left
+wt,FEMALE,MSS,0.73,66,4,Descending Colon,left
+wt,FEMALE,MSI-H,0.81,46,2,Transverse Colon,right
+wt,MALE,MSS,0.51,78,2,Sigmoid Colon,left
+wt,MALE,MSS,0.85,59,1,Cecum,right
+wt,MALE,MSS,0.84,63,3,Sigmoid Colon,left
+wt,MALE,MSI-H,0.32,64,2,Ascending Colon,right
+BRAFV600E,MALE,MSI-H,0.49,67,1,Ascending Colon,right
+BRAFV600E,MALE,MSS,0.53,69,3,Descending Colon,left
+BRAFV600E,MALE,MSI-H,0.48,67,2,Ascending Colon,right
+BRAFV600E,FEMALE,MSI-H,0.44,69,1,Cecum,right
+BRAFV600E,MALE,MSI-H,0.49,78,1,Cecum,right
+BRAFV600E,MALE,MSS,0.51,47,3,Cecum,right
+BRAFV600E,MALE,MSS,0.53,66,3,Hepatic Flexure,right
+BRAFV600E,MALE,MSI-H,0.61,61,1,Cecum,right
+BRAFV600E,FEMALE,MSI-H,0.59,58,2,Cecum,right
+BRAFV600E,FEMALE,MSS,0.82,74,2,Cecum,right
+BRAFV600E,FEMALE,MSI-H,0.64,63,2,Cecum,right
+BRAFV600E,FEMALE,MSI-H,0.56,83,1,Transverse Colon,right
+BRAFV600E,FEMALE,MSS,0.78,48,3,Ascending Colon,right
+BRAFV600E,FEMALE,MSI-H,0.76,60,2,Ascending Colon,right
+BRAFV600E,FEMALE,MSI-H,0.6,87,3,Ascending Colon,right
+BRAFV600E,FEMALE,MSI-H,0.67,77,1,Ascending Colon,right
+BRAFV600E,FEMALE,MSI-H,0.59,78,2,Transverse Colon,right
+BRAFV600E,FEMALE,MSS,0.64,47,3,Sigmoid Colon,left
+BRAFV600E,MALE,MSI-H,0.37,80,2,Ascending Colon,right
+BRAFV600E,FEMALE,MSS,0.48,60,3,Cecum,right
+BRAFV600E,FEMALE,MSI-H,0.62,74,2,Cecum,right
+BRAFV600E,FEMALE,MSI-H,0.59,73,2,Ascending Colon,right
+BRAFV600E,FEMALE,MSI-H,0.28,90,2,Cecum,right
+BRAFV600E,FEMALE,MSI-H,0.69,80,2,Ascending Colon,right
+BRAFV600E,FEMALE,MSI-H,0.6,84,2,Ascending Colon,right
+BRAFV600E,MALE,MSI-H,0.47,68,4,Ascending Colon,right
+BRAFV600E,FEMALE,MSI-H,0.67,71,2,Transverse Colon,right
+BRAFV600E,MALE,MSI-H,0.62,75,3,Transverse Colon,right
+BRAFV600E,MALE,MSI-H,0.8,76,2,Ascending Colon,right
+BRAFV600E,FEMALE,MSI-H,0.7,90,2,Ascending Colon,right
+BRAFV600E,FEMALE,MSI-H,0.75,84,2,Cecum,right
+BRAFV600E,FEMALE,MSI-H,0.53,68,2,Sigmoid Colon,left
+BRAFV600E,FEMALE,MSI-H,0.81,84,2,Cecum,right
+BRAFV600E,FEMALE,MSS,0.48,65,4,Cecum,right
+BRAFV600E,FEMALE,MSS,0.39,62,2,Ascending Colon,right
+BRAFV600E,FEMALE,MSI-H,0.65,65,2,Cecum,right
+BRAFV600E,MALE,MSI-H,0.62,66,1,Cecum,right
+BRAFV600E,FEMALE,MSI-H,0.79,89,2,Hepatic Flexure,right
+BRAFV600E,FEMALE,MSI-H,0.79,81,1,Hepatic Flexure,right
+BRAFV600E,FEMALE,MSI-H,0.5,80,3,Ascending Colon,right
+BRAFV600E,FEMALE,MSI-H,0.62,81,2,Cecum,right
+BRAFV600E,FEMALE,MSI-H,0.43,63,2,Ascending Colon,right
+BRAFnonV600E,FEMALE,MSS,0.68,87,2,Cecum,right
+BRAFnonV600E,MALE,MSS,0.45,46,2,Ascending Colon,right
+BRAFnonV600E,FEMALE,MSS,0.87,71,3,Cecum,right
+BRAFnonV600E,FEMALE,MSI-H,0.44,48,3,Ascending Colon,right
+BRAFnonV600E,MALE,MSS,0.57,82,2,Sigmoid Colon,left
+BRAFnonV600E,MALE,MSS,0.74,74,2,Sigmoid Colon,left
+BRAFnonV600E,MALE,MSI-H,0.5,84,3,Cecum,right
+BRAFnonV600E,MALE,MSS,0.66,67,2,Cecum,right
+BRAFnonV600E,FEMALE,MSI-H,0.51,79,2,Ascending Colon,right
+BRAFnonV600E,FEMALE,MSS,0.53,61,1,Cecum,right
+BRAFnonV600E,MALE,MSI-H,0.42,57,2,Ascending Colon,right
+wt,MALE,MSI-H,0.6,74,2,[Discrepancy],right
+wt,MALE,MSS,0.39,65,3,[Discrepancy],left
+wt,MALE,MSI-H,0.59,53,1,[Discrepancy],right
+wt,FEMALE,MSS,0.58,80,2,Rectosigmoid Junction,right
+wt,FEMALE,MSS,0.81,71,2,[Discrepancy],right
+wt,MALE,MSS,0.5,70,4,[Discrepancy],left
+wt,MALE,MSS,0.59,65,2,[Discrepancy],right
+wt,MALE,MSS,0.54,56,4,[Discrepancy],left
+wt,MALE,MSS,0.49,69,2,[Discrepancy],right
+wt,MALE,MSS,0.68,49,4,[Not Available],left
+wt,FEMALE,MSS,0.59,68,3,[Discrepancy],left
+BRAFV600E,FEMALE,MSI-H,0.79,71,4,[Not Available],right
+BRAFV600E,FEMALE,MSI-H,0.75,77,2,[Discrepancy],right
+BRAFV600E,MALE,MSI-H,0.57,84,3,[Not Available],right
