@@ -47,7 +47,7 @@ Download expression and mutation data from TCGAbiolinks.
 
 ### ARACNe
 
-In this folder I included all the scripts I used to generate the regulons for TCGA and E-MTAB-12862 following the ARACNe pipeline (https://github.com/califano-lab/ARACNe-AP).
+In this folder I included all the scripts I used to generate the regulons for TCGA and E-MTAB-12862 following the ARACNe pipeline (https://github.com/califano-lab/ARACNe-AP). You can also see the TF_COAD.txt file which contains the transcription factors, signaling proteins and chromain regulatory genes used to build the regulons.
 
 ## Datasets
 
