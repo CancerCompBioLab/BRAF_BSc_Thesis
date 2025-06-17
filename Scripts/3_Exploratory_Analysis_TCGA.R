@@ -1,3 +1,14 @@
+library(readr)
+library(SummarizedExperiment)
+library(ggplot2)
+library(dplyr)
+library(DESeq2)
+library(maftools)
+library(readxl)
+library(biomaRt)
+library(rtracklayer)
+library(reshape2)
+
 #Exploratory analysis TCGA 
 #please load an exectue the scripts to get all the files for this part of the code
 
