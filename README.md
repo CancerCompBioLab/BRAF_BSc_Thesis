@@ -43,7 +43,7 @@ Loading regulons from ARACNe's output and performing VIPER analysis (limma was u
 
 ### ARACNe
 
-In this folder you can see all the script I used to generate the regulons for TCGA and E-MTAB-12862 following the ARACNe pipeline (https://github.com/califano-lab/ARACNe-AP)
+In this folder you can see all the scripts I used to generate the regulons for TCGA and E-MTAB-12862 following the ARACNe pipeline (https://github.com/califano-lab/ARACNe-AP)
 
 ## Datasets
 
