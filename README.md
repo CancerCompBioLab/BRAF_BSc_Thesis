@@ -63,6 +63,9 @@ This folder contains the results of the multiple Differential Expression Analysi
 
 Here I uploaded my Supplementary Information and Main Manuscript of the project (PDF).
 
+# Contact
+
+For any questions, feedback, or other opportunities, please don't be afraid to reach out to me! You can email me at taras.yuziv@alum.esci.upf.edu or tarasfriend2004@gmail.com
 
 
 
