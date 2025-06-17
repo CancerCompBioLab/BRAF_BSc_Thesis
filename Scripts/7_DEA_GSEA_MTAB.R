@@ -140,7 +140,7 @@ ranked_genes_mtab_v600e_vs_wt <- sort(ranked_genes_mtab_v600e_vs_wt, decreasing=
 ranked_genes_mtab_v600e_vs_wt <- ranked_genes_mtab_v600e_vs_wt[!duplicated(names(ranked_genes_mtab_v600e_vs_wt))]
 
 library(EnhancedVolcano)
-
+#load MTAB_DGE_BRAFV600E_vs_BRAFWT.csv from github (Results/E-MTAB-12862). use: DEG_MTAB_V600E_VS_WT <- read_csv("Results/MTAB/MTAB_DGE_BRAFV600E_vs_BRAFWT.csv")
 MTAB_v600e_vs_wt_volcano <- EnhancedVolcano(DEG_MTAB_V600E_VS_WT,
                                             lab = DEG_MTAB_V600E_VS_WT$gene_symbol,
                                             x = "log2FoldChange",
@@ -284,6 +284,7 @@ ranked_genes_mtab_nonv600e_vs_wt <- ranked_genes_mtab_nonv600e_vs_wt[!duplicated
 
 library(EnhancedVolcano)
 
+#load MTAB_DGE_BRAFnonV600E_vs_BRAFWT.csv from github (Results/E-MTAB-12862). use: DEG_MTAB_nonV600E_VS_WT <- read_csv("Results/MTAB/MTAB_DGE_BRAFnonV600E_vs_BRAFWT.csv")
 MTAB_nonv600e_vs_wt_volcano <- EnhancedVolcano(DEG_MTAB_nonV600E_VS_WT,
                                                lab = DEG_MTAB_nonV600E_VS_WT$gene_symbol,
                                                x = "log2FoldChange",
@@ -433,6 +434,7 @@ ranked_genes_mtab_v600e_vs_nonv600e <- ranked_genes_mtab_v600e_vs_nonv600e[!dupl
 
 library(EnhancedVolcano)
 
+#load MTAB_DGE_BRAFV600E_vs_BRAFnonV600E.csv from github (Results/E-MTAB-12862). use: DEG_MTAB_V600E_VS_nonV600E <- read_csv("Results/MTAB/MTAB_DGE_BRAFV600E_vs_BRAFnonV600E.csv")
 MTAB_v600e_vs_nonv600e_volcano <- EnhancedVolcano(DEG_MTAB_V600E_VS_nonV600E,
                                                   lab = DEG_MTAB_V600E_VS_nonV600E$gene_symbol,
                                                   x = "log2FoldChange",
