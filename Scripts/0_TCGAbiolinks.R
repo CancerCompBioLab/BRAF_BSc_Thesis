@@ -32,4 +32,4 @@ query_mut$results[[1]] <- unique_mutation_files
 #Create a SummarizedExperiment
 mut_COAD<-GDCprepare(query_mut,summarizedExperiment = TRUE)
 
-## PLEASE KEEP THE mut_COAD and exp_COAD_raw objects in your R Enviroment
+## PLEASE KEEP THE mut_COAD and exp_COAD_raw objects in your R Environment
