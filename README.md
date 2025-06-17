@@ -43,7 +43,7 @@ Loading regulons from ARACNe's output and performing VIPER analysis (limma was u
 
 ## Datasets
 
-In this folder you can find the metadata for TCGA and E-MTAB-12862 cohorts (fully annotated). Raw counts and additional datasets are not included due its large size.
+In this folder you can find the metadata for TCGA and E-MTAB-12862 cohorts (fully annotated). Other metadata files necessary to build the TCGA metadata are included. Raw counts and additional datasets are not in the folder due its large size.
 
 ## Results
 
