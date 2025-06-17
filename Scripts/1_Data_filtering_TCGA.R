@@ -12,11 +12,10 @@ library(reshape2)
 #loading all the data TCGA. Please change paths to your local directories
 gene_expression_data <- read_rds("/path_to_the_file")
 mutation_data <- read_rds("/path_to_the_file")
-metadata <-readr::read_tsv("/path_to_the_file")
-metadata_COAD <- read.csv("/path_to_the_file")
-metadata_PANCAN<-readr::read_tsv("/path_to_the_file")
-MTAB_counts <- read.table(gzfile("/path_to_the_file"), sep="\t", header=TRUE, stringsAsFactors=FALSE)
-metadata_MTAB<- read_xlsx("/path_to_the_file")
+metadata <-readr::read_tsv("Datasets/215982clinic_sup_grassso_cancerDisc18.tsv")
+metadata_COAD <- read.csv("Datasets/COAD_clinic.csv")
+metadata_PANCAN<-readr::read_tsv("Datasets/clinical_PANCAN_patient_with_followup.tsv")
+
 #reading
 mutation_data <- read.maf(mutation_data)
 #raw counts
