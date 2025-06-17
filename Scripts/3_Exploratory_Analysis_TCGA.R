@@ -10,8 +10,8 @@ library(rtracklayer)
 library(reshape2)
 
 #Exploratory analysis TCGA 
-#please load an exectue the scripts to get all the files for this part of the code
 
+merged_data_wt_vs_v600e <- read_csv("Datasets/merged_data_wt_vs_v600e.csv") #load the merged_data_wt_vs_v600e if you could execute the previous script. The data is in the github repository folder "Datsets".
 counts_wt_vs_V600E <- cbind(filtered_wtBRAF_expression,
                             filtered_V600E_expression,
                             filtered_nonV600E_expression)
