@@ -2,7 +2,7 @@ library(TCGAbiolinks)
 library(dplyr)
 library(maftools)
 library(SummarizedExperiment)
-#Query TCGA-READ gene expression data
+#Query TCGA-COAD gene expression data
 query_exp <- GDCquery(project = "TCGA-COAD",
                       data.category = "Transcriptome Profiling",
                       data.type = "Gene Expression Quantification",
@@ -26,7 +26,7 @@ colnames(exp_COAD)[1:5]
 #We want to keep only the tumour samples and remove any other samples. The tumour samples end with 01A.
 #We therefore filter for these samples
 exp_COAD<- dplyr::select(exp_COAD,contains("01A"))
-#Now we have 163 cases, which is more similar to 167 cases stated above (difference possible as we select only 01A)
+
 #Now we can further shorten the sample name so that it is identical with the sample name in clinical data
 colnames(exp_COAD)<-substr(colnames(exp_COAD), 1, 12)
 #All cases are unique
@@ -36,7 +36,7 @@ duplicated(colnames(exp_COAD))
 colnames(exp_COAD)[1:5]
 
 
-# Query available files for TCGA-READ
+# Query available files for TCGA-COAD
 query_mut <- GDCquery(
   project = "TCGA-COAD",
   data.category = "Simple Nucleotide Variation",
