@@ -6,6 +6,11 @@ In this project I aimed to look into the transcriptional and regulatory landscap
 ## Scripts
 All the scripts are intended to be run sequentially. However the outputs of computationally intensive steps (e.g., DGE and VIPER analyses) are provided separately (Results folder) in case you wish to explore specific sections of the code without rerunning the full pipeline.
 
+
+### 0_TCGAbiolinks.R
+
+Download expression and mutation data from TCGAbiolinks.
+
 ### 1_Data_Filtering_TCGA.R
 
 Data loading, sample stratification and building metadata of TCGA (discovery cohort).
@@ -41,10 +46,6 @@ Performing Differential Expression Analysis and Gene Set Enrichment Anaylsis usi
 ### 9_VIPERxLIMMA_analysis.R
 
 Loading regulons from ARACNe's output and performing VIPER analysis (limma was used to get the differentially expressed genes signatures).
-
-### TCGAbiolinks.R
-
-Download expression and mutation data from TCGAbiolinks.
 
 ### ARACNe
 
