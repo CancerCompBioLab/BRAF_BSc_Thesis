@@ -57,7 +57,7 @@ dds_wt_vs_v600e <- DESeqDataSetFromMatrix(
 # dds_wt_vs_v600e <- DESeq(dds_wt_vs_v600e)
 levels(dds_wt_vs_v600e$condition)
 
-#ran this in the cluster.
+### ALL THE RESULTS (data frames) FROM THE DIFFERENTIAL EXPRESSION ANALYSIS ARE IN THE RESULTS FOLDER. FOR TCGA, E-MTAB-12862, AND ONE-VS-REST (TCGA). These codes were run in the cluster. You can use the loaded dataframes to check the GSEA.
 #V600E VS WT
 load("~/OnDemand/OnDemand_Results_TCGA/DESeq2_wt_vs_v600e_v2_results.RData")
 
