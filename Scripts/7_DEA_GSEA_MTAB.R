@@ -14,7 +14,8 @@ library(reshape2)
 
 library(stringr)
 sample_ids_MTAB <- metadata_MTAB$`DNA Tumor Sample Barcode`
-grep_lines <- readLines("/CCBdata/users/lea/BRAF_Postdoc_Project/Datasets/RNA-seq/E-MTAB-12862/Mutation/results_CRC_Braf/annotation/project/braf_grep_results.txt")
+#please load the grep lines from the Github Repository folder "Datasets"
+grep_lines <- readLines("Datasets/braf_grep_results.txt")
 
 
 parse_braf_line <- function(line) {
@@ -102,6 +103,7 @@ dds_MTAB_diffexp <- DESeqDataSetFromMatrix(countData = MTAB_counts_filtered_v600
 # dds_MTAB_diffexp <- DESeq(dds_MTAB_diffexp)
 # save(dds_MTAB_diffexp, file = "DESeq_MTAB_V600E_vs_WT.Rdata")
 
+## ALL THE RESULTS (data frames) FROM THE DIFFERENTIAL EXPRESSION ANALYSIS ARE IN THE RESULTS FOLDER. FOR TCGA, E-MTAB-12862, AND ONE-VS-REST (TCGA). These codes were run in the cluster. You can use the loaded dataframes to check the GSEA.
 load("DESeq_MTAB_V600E_vs_WT_results.Rdata")
 
 dds_MTAB_diffexp
