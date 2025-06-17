@@ -108,6 +108,7 @@ ranked_genes_V600E_vs_nonV600E_wt <- ranked_genes_V600E_vs_nonV600E_wt[!duplicat
 
 library(EnhancedVolcano)
 
+#load TCGA_DGE_BRAFV600E_vs_BRAFnonV600E_WT.csv from github (Results/TCGA/One_vs_Rest). use: DEG_V600E_vs_nonV600E_wt <- read_csv("Results/TCGA/One_vs_Rest/TCGA_DGE_BRAFV600E_vs_BRAFnonV600E_WT.csv")
 v600e_vs_nonv600e_wt <- EnhancedVolcano(DEG_V600E_vs_nonV600E_wt,
                                         lab = DEG_V600E_vs_nonV600E_wt$gene_symbol,
                                         x = "log2FoldChange",
@@ -242,7 +243,7 @@ ranked_genes_nonV600E_vs_V600E_wt <- sort(ranked_genes_nonV600E_vs_V600E_wt, dec
 ranked_genes_nonV600E_vs_V600E_wt <- ranked_genes_nonV600E_vs_V600E_wt[!duplicated(names(ranked_genes_nonV600E_vs_V600E_wt))]
 
 library(EnhancedVolcano)
-
+#load TCGA_DGE_BRAFnonV600E_vs_BRAFV600E_WT.csv from github (Results/TCGA/One_vs_Rest). use: DEG_nonV600E_vs_V600E_wt <- read_csv("Results/TCGA/One_vs_Rest/TCGA_DGE_BRAFnonV600E_vs_BRAFV600E_WT.csv")
 nonv600e_vs_v600e_wt <- EnhancedVolcano(DEG_nonV600E_vs_V600E_wt,
                                         lab = DEG_nonV600E_vs_V600E_wt$gene_symbol,
                                         x = "log2FoldChange",
@@ -376,6 +377,7 @@ ranked_genes_wt_vs_V600E_nonV600E <- ranked_genes_wt_vs_V600E_nonV600E[!duplicat
 
 library(EnhancedVolcano)
 
+#load TCGA_DGE_BRAFWT_vs_BRAFV600E_nonV600E.csv from github (Results/TCGA/One_vs_Rest). use: DEG_wt_vs_V600E_nonV600E <- read_csv("Results/TCGA/One_vs_Rest/TCGA_DGE_BRAFWT_vs_BRAFV600E_nonV600E.csv")
 nonv600e_vs_v600e_wt <- EnhancedVolcano(DEG_wt_vs_V600E_nonV600E,
                                         lab = DEG_wt_vs_V600E_nonV600E$gene_symbol,
                                         x = "log2FoldChange",
