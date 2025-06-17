@@ -41,6 +41,10 @@ Performing Differential Expression Analysis and Gene Set Enrichment Anaylsis usi
 
 Loading regulons from ARACNe's output and performing VIPER analysis (limma was used to get the differentially expressed genes signatures).
 
+### ARACNe
+
+In this folder you can see all the script I used to generate the regulons for TCGA and E-MTAB-12862 following the ARACNe pipeline (https://github.com/califano-lab/ARACNe-AP)
+
 ## Datasets
 
 In this folder you can find the metadata for TCGA and E-MTAB-12862 cohorts (fully annotated). In addition, other metadata files, necessary to build the TCGA metadata, are included. Raw counts and additional datasets are not in the folder due to its large size.
