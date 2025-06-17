@@ -13,10 +13,10 @@
 
 set -euxo pipefail
 
-#Aracne=/mnt/bioinfnas/computational/allinas/Programs/ARACNe-AP/Aracne.jar
-ARACNe=/mnt/CCBdata/projects/BRAF_regulon/ARACNe-AP
-CCBdata=/mnt/CCBdata/projects/BRAF_regulon
+
+ARACNe=/path/to/ARACNe-AP/file
+CCBdata=/folder
 [ -d "$CCBdata" ] || { echo "$CCBdata doesn't exist"; exit 1; } && { echo "$CCBdata exists"; ls $CCBdata; }
 
-singularity run --bind ${PWD},"$CCBdata","$ARACNe" --pwd "$CCBdata" /mnt/CCBdata/projects/BRAF_regulon/openjdk_8u151-jdk.sif ./run_ARACNe_consolidate.sh  
+singularity run --bind ${PWD},"$CCBdata","$ARACNe" --pwd "$CCBdata" /path/to/openjdk_8u151-jdk.sif ./run_ARACNe_consolidate.sh  #the script you want to run
 
