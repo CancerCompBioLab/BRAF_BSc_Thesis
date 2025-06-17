@@ -10,8 +10,8 @@ library(rtracklayer)
 library(reshape2)
 #please execute all the previous code
 library(PreMSIm)
-
-expression_unstranded_data_tpm <- assays(gene_expression_data)[["tpm_unstrand"]]
+#Please load exp_COAD_TPM from 0_TCGAbiolinks.R
+expression_unstranded_data_tpm <- exp_COAD_TPM
 
 df_expression_unstranded_data_tpm <- data.frame(row.names = row.names(expression_unstranded_data_tpm),
                                                 expression_unstranded_data_tpm)
@@ -22,7 +22,7 @@ df_cleaned <- df_expression_unstranded_data_tpm %>% group_by(Gene_ID) %>%
   summarise(across(where(is.numeric), mean, na.rm = TRUE)) %>% ungroup()
 
 #Translating the ENSMBL ID to Gene Symbols
-gtf_file <- "/path_to_file"
+gtf_file <- "/path_to_file"#the file is too big to upload in github, you should download it from "https://www.gencodegenes.org/human/release_47.html"
 genes_gtf <- rtracklayer::import(gtf_file)
 genes <- genes_gtf[genes_gtf$type == "gene"]
 
