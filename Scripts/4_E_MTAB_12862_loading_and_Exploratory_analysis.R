@@ -1,3 +1,15 @@
+library(readr)
+library(SummarizedExperiment)
+library(ggplot2)
+library(dplyr)
+library(DESeq2)
+library(maftools)
+library(readxl)
+library(biomaRt)
+library(rtracklayer)
+library(reshape2)
+
+
 #E-MTAB-12862 loading and exploratory analysis
 
 #loading data, please change paths to your local directories
