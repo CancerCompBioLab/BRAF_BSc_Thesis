@@ -68,6 +68,7 @@ dds_TCGA_v600e_vs_nonv600e_wt <- DESeqDataSetFromMatrix(countData = diff_exp_TCG
 # dds_TCGA_v600e_vs_nonv600e_wt <- DESeq(dds_TCGA_v600e_vs_nonv600e_wt)
 # save(dds_TCGA_v600e_vs_nonv600e_wt, file = "DESeq2_TCGA_v600e_vs_nonv600e_wt_RESULTS.Rdata")
 
+## ALL THE RESULTS (data frames) FROM THE DIFFERENTIAL EXPRESSION ANALYSIS ARE IN THE RESULTS FOLDER. FOR TCGA, E-MTAB-12862, AND ONE-VS-REST (TCGA). These codes were run in the cluster. You can use the loaded dataframes to check the GSEA.
 load("DESeq2_TCGA_v600e_vs_nonv600e_wt_RESULTS.Rdata")
 
 dds_TCGA_v600e_vs_nonv600e_wt
