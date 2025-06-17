@@ -12,10 +12,10 @@ library(reshape2)
 
 #E-MTAB-12862 loading and exploratory analysis
 
-#loading data, please change paths to your local directories
-MTAB_counts <- read.table(gzfile("/path_to_file"), sep="\t", header=TRUE, stringsAsFactors=FALSE)
+#loading data, please download the E_MTAB_12862 files through the following link in ArrayExpress (https://www.ebi.ac.uk/biostudies/ArrayExpress/studies/E-MTAB-12862?query=E-MTAB-12862)
+MTAB_counts <- read.table(gzfile("/path_to_file/CRC.SW.mRNA.count.txt.gz"), sep="\t", header=TRUE, stringsAsFactors=FALSE)
 metadata_MTAB<- read_xlsx("Datasets/metadata__MTAB_not_filtered.xlsx")
-MTAB_counts_symbol <- read.table(gzfile("/path_to_file"), sep="\t", header=TRUE, stringsAsFactors=FALSE)
+MTAB_counts_symbol <- read.table(gzfile("/CRC.SW.mRNA.symbol.count.txt.gz"), sep="\t", header=TRUE, stringsAsFactors=FALSE)
 
 MTAB_counts_filtered <- MTAB_counts
 colnames(MTAB_counts_filtered) <- gsub("\\.", "-", colnames(MTAB_counts_filtered))
