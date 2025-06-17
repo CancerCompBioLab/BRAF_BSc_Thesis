@@ -49,11 +49,11 @@ Loading regulons from ARACNe's output and performing VIPER analysis (limma was u
 
 ### ARACNe
 
-In this folder I included all the scripts I used to generate the regulons for TCGA and E-MTAB-12862 following the ARACNe pipeline (https://github.com/califano-lab/ARACNe-AP). Please follow the ARACNe pipeline in order to download all the software/scripts (e.g., ARACNE-AP) needed to build the regulons. You can also see the TF_COAD.txt file which contains the transcription factors, signaling proteins and chromain regulatory genes used to build the regulons.
+In this folder I included all the scripts I used to generate the regulons for TCGA and E-MTAB-12862 following the ARACNe pipeline (https://github.com/califano-lab/ARACNe-AP). Please follow the ARACNe pipeline in order to download all the software/scripts (e.g., ARACNE-AP) needed to build the regulons. You can also see the TF_COAD.txt file which contains the transcription factors, signaling proteins and chromatin regulatory genes used to build the regulons.
 
 ## Datasets
 
-In this folder you can find the metadata for TCGA and E-MTAB-12862 fully annotated cohorts (Annotated_Metadatas folder). In addition, other metadata files, necessary to build the TCGA metadata, are included. I also uploaded some intermediate files generated from the scripts (please read the comments of my code). Raw counts and additional datasets are not in the folder due to its large size (you have the instructions in the scripts to download them).
+In this folder you can find the metadata for TCGA and E-MTAB-12862 fully annotated cohorts (Annotated_Metadatas folder). In addition, other metadata files, necessary to build the TCGA metadata, are included. I also uploaded some intermediate files generated from the scripts (please read the comments of my code). Raw counts and additional datasets are not in the folder due to their large size (you have the instructions in the scripts to download them).
 
 ## Results
 
