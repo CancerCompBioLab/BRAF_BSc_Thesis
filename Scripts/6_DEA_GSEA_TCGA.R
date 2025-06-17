@@ -1,3 +1,14 @@
+library(readr)
+library(SummarizedExperiment)
+library(ggplot2)
+library(dplyr)
+library(DESeq2)
+library(maftools)
+library(readxl)
+library(biomaRt)
+library(rtracklayer)
+library(reshape2)
+
 #differential expression analysis using TCGA cohorts. GSEA are also included.
 
 #please execute previous scripts in order to have all the files/objects created.
