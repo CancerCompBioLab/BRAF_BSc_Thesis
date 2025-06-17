@@ -9,6 +9,7 @@ library(biomaRt)
 library(rtracklayer)
 library(reshape2)
 library(viper)
+library(edgeR)
 
 #In this script I perform the VIPER analysis (with limma voom).
 
