@@ -18,23 +18,6 @@ exp_COAD<-assays(TCGA.COAD.exp)$tpm_unstrand
 #Convert to dataframe
 exp_COAD<-as.data.frame(exp_COAD)
 
-#We need to shorten the sample name to 12 characters to merge it after with the clinical data file,
-#which only contains 12 characters.
-colnames(exp_COAD)<-substr(colnames(exp_COAD), 1, 16)
-#Now we see that the sample names are shorter.
-colnames(exp_COAD)[1:5]
-#We want to keep only the tumour samples and remove any other samples. The tumour samples end with 01A.
-#We therefore filter for these samples
-exp_COAD<- dplyr::select(exp_COAD,contains("01A"))
-
-#Now we can further shorten the sample name so that it is identical with the sample name in clinical data
-colnames(exp_COAD)<-substr(colnames(exp_COAD), 1, 12)
-#All cases are unique
-duplicated(colnames(exp_COAD))
-#Now we see that the sample names are shorter.
-
-colnames(exp_COAD)[1:5]
-
 
 # Query available files for TCGA-COAD
 query_mut <- GDCquery(
