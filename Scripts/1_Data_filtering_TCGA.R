@@ -9,19 +9,17 @@ library(biomaRt)
 library(rtracklayer)
 library(reshape2)
 
-#loading all the data TCGA. Please change paths to your local directories
-gene_expression_data <- read_rds("/path_to_the_file")
-mutation_data <- read_rds("/path_to_the_file")
+#Use the mut_COAD and exp_COAD_raw from the last script please. Please change paths to your local directories
+gene_expression_data <- exp_COAD_raw
+mutation_data <- mut_COAD
 metadata <-readr::read_tsv("Datasets/215982clinic_sup_grassso_cancerDisc18.tsv")
 metadata_COAD <- read.csv("Datasets/COAD_clinic.csv")
 metadata_PANCAN<-readr::read_tsv("Datasets/clinical_PANCAN_patient_with_followup.tsv")
 
-#reading
-mutation_data <- read.maf(mutation_data)
+
 #raw counts
-expression_unstranded_data <- assays(gene_expression_data)[["unstranded"]]
-#mutation data for TCGA
-mutation_data <- mutation_data@data
+expression_unstranded_data <- exp_COAD_raw
+
 V600E_BRAF_mutations <- mutation_data %>% filter(mutation_data$Hugo_Symbol == "BRAF" & mutation_data$HGVSp_Short == "p.V640E") %>% dplyr::select(Hugo_Symbol, HGVSp_Short, Tumor_Sample_Barcode)
 
 # double check because there might be classes.
