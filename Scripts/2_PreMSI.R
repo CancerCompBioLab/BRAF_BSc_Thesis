@@ -1,4 +1,13 @@
-
+library(readr)
+library(SummarizedExperiment)
+library(ggplot2)
+library(dplyr)
+library(DESeq2)
+library(maftools)
+library(readxl)
+library(biomaRt)
+library(rtracklayer)
+library(reshape2)
 #please execute all the previous code
 library(PreMSIm)
 
