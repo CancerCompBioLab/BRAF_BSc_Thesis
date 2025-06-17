@@ -56,8 +56,9 @@ topTable_V600E_vs_WT.nonV600E <- topTable(fit_V600E_vs_WT.nonV600E, coef = "muta
 topTable_V600E_vs_WT.nonV600E$ENSEMBL <- rownames(topTable_V600E_vs_WT.nonV600E)
 
 # Load GENCODE v36 annotations
-gencode_v36 <- rtracklayer::import("/CCBdata/users/arnau/MOBER/extdata/gencode.v36.annotation.gtf")
-entrez_annot_v36 <- data.table::fread("/CCBdata/users/arnau/MOBER/extdata/gencode.v36.metadata.EntrezGene.gz",
+#download the gene code (https://www.gencodegenes.org/human/release_47.html)
+gencode_v36 <- rtracklayer::import("path/gencode.v36.annotation.gtf")
+entrez_annot_v36 <- data.table::fread("path/gencode.v36.metadata.EntrezGene.gz",
                                       col.names = c("transcript_id", "entrez_id"))
 
 
@@ -106,8 +107,8 @@ load("Null_Matrix_V600E_vs_WT.nonV600E.RData")
 
 
 
-
-gencode_v36 <- rtracklayer::import("/CCBdata/users/arnau/MOBER/extdata/gencode.v36.annotation.gtf")
+#download the gene code (https://www.gencodegenes.org/human/release_47.html)
+gencode_v36 <- rtracklayer::import("path/gencode.v36.annotation.gtf")
 
 gencode_v36_genes <- gencode_v36[gencode_v36$type == "gene"]
 gencode_df <- as.data.frame(gencode_v36_genes)[, c("gene_id", "gene_name")]
@@ -135,7 +136,8 @@ null_matrix_mapped_V600E_vs_WT.nonV600E_ZSCORE <- qnorm(p_null / 2, lower.tail =
 
 
 #MTAB regulon
-network_MTAB <- read.delim("/CCBdata/projects/BRAF_regulon/Aracne_COAD_output_MTAB_protein_coding/network.txt", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+# regulon is not provided due to its large size, but the results are in the Results/VIPER. Keep reading the code please
+network_MTAB <- read.delim("path/to/regulon", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
 network_MTAB <- network_MTAB[, 1:3]
 write.table(network_MTAB, "network_MTAB.adj", sep = "\t",
             row.names = FALSE, col.names = FALSE, quote = FALSE)
@@ -158,6 +160,7 @@ mrs_V600E_vs_WT.nonV600E_df <- mrs_V600E_vs_WT.nonV600E_df[order(mrs_V600E_vs_WT
 mrs_V600E_vs_WT.nonV600E_df$TF <- factor(mrs_V600E_vs_WT.nonV600E_df$TF, levels = mrs_V600E_vs_WT.nonV600E_df$TF)
 
 # Plot
+#load msVIPER_BRAFV600E_vs_BRAFnonV600E_WT.csv from the Results/VIPER folder in Github. Use mrs_V600E_vs_WT.nonV600E_df <- read_csv("Results/VIPER/msVIPER_BRAFV600E_vs_BRAFnonV600E_WT.csv")
 VIPER_BRAFV600E_vs_nonV600E.WT <- ggplot(mrs_V600E_vs_WT.nonV600E_df, aes(x = TF, y = NES, fill = NES)) +
   geom_col() +
   coord_flip() +
@@ -194,6 +197,7 @@ mrs_V600E_vs_WT.nonV600E_filtered_df$TF <- factor(mrs_V600E_vs_WT.nonV600E_filte
 
 library(ggplot2)
 
+#load msVIPER_nonShadowed_BRAFV600E_vs_BRAFnonV600E_WT.csv from the Results/VIPER/VIPER_nonShadowed folder in Github. Use mrs_V600E_vs_WT.nonV600E_df <- read_csv("Results/VIPER/VIPER_nonShadowed/msVIPER_nonShadowed_BRAFV600E_vs_BRAFnonV600E_WT.csv")
 VIPER_BRAFV600E_vs_nonV600E.WT_shadow <- ggplot(mrs_V600E_vs_WT.nonV600E_filtered_df, aes(x = TF, y = NES, fill = NES)) +
   geom_col() +
   coord_flip() +
@@ -232,8 +236,9 @@ topTable_nonV600E_vs_WT.V600E <- topTable(fit_nonV600E_vs_WT.V600E, coef = "muta
 topTable_nonV600E_vs_WT.V600E$ENSEMBL <- rownames(topTable_nonV600E_vs_WT.V600E)
 
 # Load GENCODE v36 annotations
-gencode_v36 <- rtracklayer::import("/CCBdata/users/arnau/MOBER/extdata/gencode.v36.annotation.gtf")
-entrez_annot_v36 <- data.table::fread("/CCBdata/users/arnau/MOBER/extdata/gencode.v36.metadata.EntrezGene.gz",
+#download your gene code, as specified previously.
+gencode_v36 <- rtracklayer::import("path/gencode.v36.annotation.gtf")
+entrez_annot_v36 <- data.table::fread("path/gencode.v36.metadata.EntrezGene.gz",
                                       col.names = c("transcript_id", "entrez_id"))
 
 
@@ -282,7 +287,7 @@ signature_nonV600E_vs_WT.V600E <- setNames(topTable_nonV600E_vs_WT.V600E$zscore,
 load("Null_Matrix_nonV600E_vs_WT.V600E.RData")
 
 
-gencode_v36 <- rtracklayer::import("/CCBdata/users/arnau/MOBER/extdata/gencode.v36.annotation.gtf")
+gencode_v36 <- rtracklayer::import("path/gencode.v36.annotation.gtf")
 
 gencode_v36_genes <- gencode_v36[gencode_v36$type == "gene"]
 gencode_df <- as.data.frame(gencode_v36_genes)[, c("gene_id", "gene_name")]
@@ -307,7 +312,7 @@ p_null <- 2 * pt(-abs(null_matrix_mapped_nonV600E_vs_WT.V600E), df = df_residual
 #convert to z-scores
 null_matrix_mapped_nonV600E_vs_WT.V600E_ZSCORE <- qnorm(p_null / 2, lower.tail = FALSE) * sign(null_matrix_mapped_nonV600E_vs_WT.V600E)
 
-network_MTAB <- read.delim("/CCBdata/projects/BRAF_regulon/Aracne_COAD_output_MTAB_protein_coding/network.txt", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+network_MTAB <- read.delim("path/network.txt", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
 network_MTAB <- network_MTAB[, 1:3]
 write.table(network_MTAB, "network_MTAB.adj", sep = "\t",
             row.names = FALSE, col.names = FALSE, quote = FALSE)
@@ -328,7 +333,7 @@ mrs_nonV600E_vs_WT.V600E_df$TF <- rownames(mrs_nonV600E_vs_WT.V600E_df)
 mrs_nonV600E_vs_WT.V600E_df <- mrs_nonV600E_vs_WT.V600E_df[order(mrs_nonV600E_vs_WT.V600E_df$NES), ]
 mrs_nonV600E_vs_WT.V600E_df$TF <- factor(mrs_nonV600E_vs_WT.V600E_df$TF, levels = mrs_nonV600E_vs_WT.V600E_df$TF)
 
-
+#load msVIPER_BRAFnonV600E_vs_BRAFV600E_WT.csv from the Results/VIPER folder in Github. Use mrs_nonV600E_vs_WT.V600E_df <- read_csv("Results/VIPER/msVIPER_BRAFnonV600E_vs_BRAFV600E_WT.csv")
 VIPER_nonV600E_vs_V600E.WT <- ggplot(mrs_nonV600E_vs_WT.V600E_df, aes(x = TF, y = NES, fill = NES)) +
   geom_col() +
   coord_flip() +
@@ -365,6 +370,7 @@ filtered_df$TF <- factor(filtered_df$TF, levels = filtered_df$TF)
 
 library(ggplot2)
 
+#load msVIPER_nonShadowed_BRAFnonV600E_vs_BRAFV600E_WT.csv from the Results/VIPER/VIPER_nonShadowed folder in Github. Use filtered_df <- read_csv("Results/VIPER/VIPER_nonShadowed/msVIPER_nonShadowed_BRAFnonV600E_vs_BRAFV600E_WT.csv")
 VIPER_nonV600E_vs_V600E.WT_shadow <- ggplot(filtered_df, aes(x = TF, y = NES, fill = NES)) +
   geom_col() +
   coord_flip() +
@@ -401,8 +407,8 @@ topTable_WT_vs_V600E.nonV600E <- topTable(fit_WT_vs_V600E.nonV600E, coef = "muta
 topTable_WT_vs_V600E.nonV600E$ENSEMBL <- rownames(topTable_WT_vs_V600E.nonV600E)
 
 
-gencode_v36 <- rtracklayer::import("/CCBdata/users/arnau/MOBER/extdata/gencode.v36.annotation.gtf")
-entrez_annot_v36 <- data.table::fread("/CCBdata/users/arnau/MOBER/extdata/gencode.v36.metadata.EntrezGene.gz",
+gencode_v36 <- rtracklayer::import("path/gencode.v36.annotation.gtf")
+entrez_annot_v36 <- data.table::fread("path/gencode.v36.metadata.EntrezGene.gz",
                                       col.names = c("transcript_id", "entrez_id"))
 
 
@@ -450,7 +456,7 @@ signature_WT_vs_V600E.nonV600E <- setNames(topTable_WT_vs_V600E.nonV600E$zscore,
 load("Null_Matrix_WT_vs_V600E.nonV600E.RData")
 
 
-gencode_v36 <- rtracklayer::import("/CCBdata/users/arnau/MOBER/extdata/gencode.v36.annotation.gtf")
+gencode_v36 <- rtracklayer::import("path/gencode.v36.annotation.gtf")
 
 gencode_v36_genes <- gencode_v36[gencode_v36$type == "gene"]
 gencode_df <- as.data.frame(gencode_v36_genes)[, c("gene_id", "gene_name")]
@@ -477,7 +483,7 @@ p_null <- 2 * pt(-abs(null_matrix_mapped_WT_vs_V600E.nonV600E), df = df_residual
 null_matrix_mapped_WT_vs_V600E.nonV600E_ZSCORE <- qnorm(p_null / 2, lower.tail = FALSE) * sign(null_matrix_mapped_WT_vs_V600E.nonV600E)
 
 
-network_MTAB <- read.delim("/CCBdata/projects/BRAF_regulon/Aracne_COAD_output_MTAB_protein_coding/network.txt", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+network_MTAB <- read.delim("path/network.txt", header = TRUE, sep = "\t", stringsAsFactors = FALSE)
 network_MTAB <- network_MTAB[, 1:3]
 write.table(network_MTAB, "network_MTAB.adj", sep = "\t",
             row.names = FALSE, col.names = FALSE, quote = FALSE)
@@ -498,7 +504,7 @@ mrs_WT_vs_V600E.nonV600E_df$TF <- rownames(mrs_WT_vs_V600E.nonV600E_df)
 mrs_WT_vs_V600E.nonV600E_df <- mrs_WT_vs_V600E.nonV600E_df[order(mrs_WT_vs_V600E.nonV600E_df$NES), ]
 mrs_WT_vs_V600E.nonV600E_df$TF <- factor(mrs_WT_vs_V600E.nonV600E_df$TF, levels = mrs_WT_vs_V600E.nonV600E_df$TF)
 
-
+#load msVIPER_BRAFWT_vs_BRAFV600E_nonV600E.csv from the Results/VIPER folder in Github. Use mrs_WT_vs_V600E.nonV600E_df <- read_csv("Results/VIPER/msVIPER_BRAFWT_vs_BRAFV600E_nonV600E.csv")
 VIPER_wt_vs_nonv600e_v600e <- ggplot(mrs_WT_vs_V600E.nonV600E_df, aes(x = TF, y = NES, fill = NES)) +
   geom_col() +
   coord_flip() +
@@ -533,6 +539,7 @@ filtered_WT_vs_V600E.nonV600E_df <- mrs_WT_vs_V600E.nonV600E_df[mrs_WT_vs_V600E.
 filtered_WT_vs_V600E.nonV600E_df <- filtered_WT_vs_V600E.nonV600E_df[order(filtered_WT_vs_V600E.nonV600E_df$NES), ]
 filtered_WT_vs_V600E.nonV600E_df$TF <- factor(filtered_WT_vs_V600E.nonV600E_df$TF, levels = filtered_WT_vs_V600E.nonV600E_df$TF)
 
+#load msVIPER_nonShadowed_BRAFWT_vs_BRAFV600E_nonV600E.csv from the Results/VIPER/VIPER_nonShadowed folder in Github. Use filtered_WT_vs_V600E.nonV600E_df <- read_csv("Results/VIPER/VIPER_nonShadowed/msVIPER_nonShadowed_BRAFWT_vs_BRAFV600E_nonV600E.csv")
 VIPER_WT_vs_nonV600E_V600E_shadow <- ggplot(filtered_WT_vs_V600E.nonV600E_df, aes(x = TF, y = NES, fill = NES)) +
   geom_col() +
   coord_flip() +
