@@ -55,7 +55,7 @@ In this folder you can find the metadata for TCGA and E-MTAB-12862 cohorts (full
 
 ## Results
 
-This folder contains the results of the multiple Differential Expression Analysis performed (TCGA, E-MTAB-12862, 1vsRest TCGA), as well as the VIPER analysis results (non-Shadowed results included).
+This folder contains the results of the multiple Differential Expression Analysis performed (TCGA, E-MTAB-12862, 1vsRest TCGA), as well as the VIPER analysis results (non-Shadowed results included). Regulons from E-MTAB-12862 and TCGA are not included due to its large size.
 
 
 
