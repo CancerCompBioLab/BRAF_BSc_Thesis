@@ -1,5 +1,5 @@
 # Transcriptional and Regulatory Divergence Between BRAF-V600E and non-V600E Colon Cancers
-In this project we aimed to look into the transcriptional and regulatory landscapes of BRAF-V600E and BRAF non-V600E colon cancers. By integrating gene expression data from multiple cohorts, we analyzed differential expression profiles and pathway enrichments between mutated (BRAF-V600E and BRAF nonV600E) and wild-type (BRAF WT) tumor samples. Primary analysis were conducted using TCGA COAD dataset as discovery cohort, with replication in the independent E-MTAB-12862 cohort. In addition, we applied the VIPER algorithm to infer the activity of transcription factors, signaling proteins and chromatin regulatory genes.
+In this project I aimed to look into the transcriptional and regulatory landscapes of BRAF-V600E and BRAF non-V600E colon cancers. By integrating gene expression data from multiple cohorts, we analyzed differential expression profiles and pathway enrichments between mutated (BRAF-V600E and BRAF nonV600E) and wild-type (BRAF WT) tumor samples. Primary analysis were conducted using TCGA-COAD dataset as discovery cohort, with replication in the independent E-MTAB-12862 cohort. In addition, we applied the VIPER algorithm to infer the activity of transcription factors, signaling proteins and chromatin regulatory genes.
 
 # Folders
 
@@ -43,11 +43,11 @@ Loading regulons from ARACNe's output and performing VIPER analysis (limma was u
 
 ### TCGAbiolinks.R
 
-Download expression and mutation data from TCGAbiolinks
+Download expression and mutation data from TCGAbiolinks.
 
 ### ARACNe
 
-In this folder you can see all the scripts I used to generate the regulons for TCGA and E-MTAB-12862 following the ARACNe pipeline (https://github.com/califano-lab/ARACNe-AP)
+In this folder I included all the scripts I used to generate the regulons for TCGA and E-MTAB-12862 following the ARACNe pipeline (https://github.com/califano-lab/ARACNe-AP).
 
 ## Datasets
 
