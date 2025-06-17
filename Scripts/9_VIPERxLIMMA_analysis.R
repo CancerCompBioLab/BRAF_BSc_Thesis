@@ -1,3 +1,15 @@
+library(readr)
+library(SummarizedExperiment)
+library(ggplot2)
+library(dplyr)
+library(DESeq2)
+library(maftools)
+library(readxl)
+library(biomaRt)
+library(rtracklayer)
+library(reshape2)
+library(viper)
+
 #In this script I perform the VIPER analysis (with limma voom).
 
 #V600E vs WT/nonV600E
