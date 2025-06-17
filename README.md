@@ -9,7 +9,7 @@ All the scripts are intended to be run sequentially. However the outputs of comp
 
 ### 0_TCGAbiolinks.R
 
-Download expression and mutation data from TCGAbiolinks.
+Download expression and mutation data from TCGAbiolinks. In case you cannot download the data with the code, you can always do it manually (https://portal.gdc.cancer.gov/projects/TCGA-COAD)
 
 ### 1_Data_Filtering_TCGA.R
 
