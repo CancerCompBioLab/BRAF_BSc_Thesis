@@ -14,7 +14,7 @@ library(reshape2)
 
 #loading data, please change paths to your local directories
 MTAB_counts <- read.table(gzfile("/path_to_file"), sep="\t", header=TRUE, stringsAsFactors=FALSE)
-metadata_MTAB<- read_xlsx("/path_to_file")
+metadata_MTAB<- read_xlsx("Datasets/metadata__MTAB_not_filtered.xlsx")
 MTAB_counts_symbol <- read.table(gzfile("/path_to_file"), sep="\t", header=TRUE, stringsAsFactors=FALSE)
 
 MTAB_counts_filtered <- MTAB_counts
