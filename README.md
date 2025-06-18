@@ -4,7 +4,7 @@ In this project I aimed to look into the transcriptional and regulatory landscap
 # Folders
 
 ## Scripts
-All the scripts are intended to be run sequentially. However the outputs of computationally intensive steps (e.g., DGE and VIPER analyses) are provided separately (Results folder) in case you wish to explore specific sections of the code without rerunning the full pipeline. (Please read the comments provided in the code to load specific data frames from the Results folder)
+All the scripts are intended to be run sequentially. However the outputs of computationally intensive steps (e.g., DGE and VIPER analyses) are provided separately (Results folder) in case you wish to explore specific sections of the code without rerunning the full pipeline. (Please read the comments provided in the code to load specific data frames from the Results folder). R version 4.1.3.
 
 
 ### 0_TCGAbiolinks.R
